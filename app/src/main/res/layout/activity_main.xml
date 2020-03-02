@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    >
+
+    <ImageView
+        android:id="@+id/ivCat"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="center"
+        />
+
+    <ImageView
+        android:id="@+id/ivBall"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/ball"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ivCat"
+        android:layout_alignBottom="@id/ivCat"
+        />
+
+
+
+</RelativeLayout>
