@@ -15,11 +15,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView ivBall = (ImageView) findViewById(R.id.ivBall);
-        ImageView ivCat = (ImageView) findViewById(R.id.ivCat);
+        ImageView ivBall = findViewById(R.id.ivBall);
+        ImageView ivCat = findViewById(R.id.ivCat);
+        ImageView ivSun = findViewById(R.id.ivSun);
 
         Animation animBall = AnimationUtils.loadAnimation(this,R.anim.anim_ball);
         ivBall.startAnimation(animBall);
+
+        Animation animSun = AnimationUtils.loadAnimation(this,R.anim.anim_sun);
+        ivSun.startAnimation(animSun);
 
         ivCat.setBackgroundResource(R.drawable.anim_cat);
         AnimationDrawable animCat = (AnimationDrawable) ivCat.getBackground();

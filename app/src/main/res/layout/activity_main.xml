@@ -8,6 +8,15 @@
     >
 
     <ImageView
+        android:id="@+id/ivSun"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sun"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
         android:id="@+id/ivCat"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
